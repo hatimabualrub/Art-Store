@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Store</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h2><i class="material-icons"> color_lens </i> Art Store</h2>
+        </div>
+        <ul>
+          <li>About</li>
+          <li>Home</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h2 class="title">Register Account</h2>
+      <div class="register-form">
+        <form method="POST" action="project.php">
+          <label for="first">First Name</label>
+          <input
+            type="text"
+            name="first"
+            id="first"
+            placeholder="Enter First Name"
+            required
+          />
+          <label for="last">Last Name</label>
+          <input
+            type="text"
+            name="last"
+            id="last"
+            placeholder="Enter Last Name"
+            required
+          />
+          <label for="first">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+          />
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Enter Password Confirm"
+            required
+          />
+          <div class="confirm">
+            <input type="checkbox" name="privacy" required />
+            <label>
+              agree to the
+              <a href="#">privacy policy</a>
+            </label>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
